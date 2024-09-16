@@ -95,12 +95,12 @@ ul li a:hover {
 .panel-header {
     color: rgb(16, 45, 88);
     font-size: 50;
-    align-self: flex-start;
     padding-top: 2vh;
     text-align: center;
 }
 
 .panel-list {
-    align-self: center;
+    align-self: flex-start;
     justify-self: left;
+    list-style-type: disc;
 }
