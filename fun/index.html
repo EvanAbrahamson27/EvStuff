@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>EvStuff</title>
+<link rel="icon" href="../assets/images/evIcon.png" type="image/x-icon">
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+    .gif {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh; /* Adjust height as needed */
+        margin: 20px auto;
+    }
+    img {
+        max-width: 90vw;
+        max-height: 90vh;
+        width: auto;
+        height: auto;
+        display: block;
+    }
+</style>
+<body>
+
+<div class="title">
+    <a href="/">
+        <img src="../assets/images/EvStuffTitle.gif" alt="Title" a="index.html">
+    </a>
+    <button class="music-toggle" id="musicBtn">Play Music</button>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="../assets/audio/music.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+
+<img class="gif" src="../assets/images/temp.gif">
+
+<script src="../assets/js/music.js"></script>
+</body>
+</html>

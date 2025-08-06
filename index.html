@@ -1,63 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EvStuff</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="icon" href="evIcon.png" type="image/x-icon">
-</head>
-<body style="background-color: rgb(115, 150, 202);">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>EvStuff</title>
+<link rel="icon" href="assets/images/evIcon.png" type="image/x-icon">
+<link rel="stylesheet" href="assets/css/style.css">
+<body>
 
-    <header style="background-color: rgb(10, 27, 53);">
-        <h1 style="color:white">EvStuff</h1>
-        <h2 style="color:white">Evan Abrahamson</h2>
-    </header>
+<div class="title">
+    <a href="/">
+        <img src="assets/images/EvStuffTitle.gif" alt="Title" a="index.html">
+    </a>
+    <button class="music-toggle" id="musicBtn">Play Music</button>
+</div>
 
-    <div class="container">
-        <div class="panel left-top">
-            <h1 class="panel-header">Resume</h1>
-            <a href="Abrahamson_Resume.pdf" target="_blank"><img src='Resume.jpg' alt='Resume' style="width:90%;height:90%;object-fit: cover;"></a>
-        </div>
-        <div class="panel left-bottom">
-            <h1 class="panel-header">Information</h1>
-                <ul class="panel-list">
-                    <li style="color:black">253-753-4227</li>
-                    <li style="color:black">evanabrahamson@evstuff.net</li>
-                    <li style="color:black"><a href='https://github.com/EvanAbrahamson27'>Github</a></li>
-                    <li style="color:black"><a href='https://www.linkedin.com/in/evan-abrahamson-4464bb284/'>LinkedIn</a></li>
-                </ul>
-        </div>
-        <div class="panel center">
-            <h1 class="panel-header">Portfolio</h1>
-            <h3 style="color: rgb(56, 82, 122)">Personal Projects + School Projects </h3>
-            <ul class='panel-list'>
-                <li><a href='https://evanabrahamson27.github.io/HTMLTutorial/' target="_blank">HTML + CSS Basics</a></li>
-                <li><a href='https://github.com/EvanAbrahamson27/DungeonAdventureGame' target="_blank">Dungeon Adventure Game   (Java + JavaFX)</a></li>
-                <li><a href='https://github.com/EvanAbrahamson27/AppetiteAssemblers' target="_blank">Appetite Assemblers   (SQL)</a></li>
-                <li><a href='https://github.com/jameslau3/TCSS460-WebAPI' target="_blank">Library API Back-End</a> --- <a href='https://github.com/jameslau3/TCSS460-WebAPIFrontEnd' target="_blank">Front-End</a></li>
-                <li><a href='mlImages.html' target="_blank">ML Profile Pic. Gender Prediction (Python -- Tensorflow + Keras)</a></li>
-                <li><a href='https://github.com/adamle-uw/group7-tetris' target="_blank">Java Tetris</a></li>
-                <li><a href='https://addons.mozilla.org/en-US/firefox/addon/unofficial-linkedin-blocker/' target="_blank">LinkedIn Blocker (FireFox)</a> --- <a href='https://chromewebstore.google.com/detail/linkedin-blocker/pampoflpcioidlnnkiiapoaopfbjbjmd' target="_blank">Chrome</a></li>
-                <li>Additional projects + site-upgrades in-progress!</li>
-            </ul>
-        </div>
-        <div class="panel right-top" style="padding: 5%">
-            <h1 class="panel-header" style="padding: 0">About Me</h1>
-            <p>
-                Welcome to my site! I'm Evan Abrahamson, 21 years old and a recent college graduate from the University of Washington!<br><br>
-                I love gaming, soccer (huge Sounders fan), and learning more about technology and programming.<br><br>
-                Please feel free to contact me with any questions or concerns!
-            </p>
-        </div>
-        <div class="panel right-bottom">
-            <h1 class="panel-header">Fun Stuff</h1>
-            <body>
-                Work in progress!
-            </body>
-        </div>
-    </div>
+<div class="buttons">
+    <div class="button" style="background-image: url('assets/images/homeworkbutton.png');" onclick="location.href='work/index.html'" alt="Work"></div>
+    <div class="button" style="background-image: url('assets/images/homefunbutton.png');" onclick="location.href='fun/index.html'" alt="Fun"></div>
+</div>
 
+<audio id="bgMusic" loop>
+    <source src="assets/audio/music.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+
+<script src="assets/js/music.js"></script>
+<script src="assets/js/homebuttons.js"></script>
 </body>
 </html>
