@@ -5,6 +5,7 @@ html, body {
     height: 100%;
     background: #00021a;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 .title {
@@ -40,6 +41,7 @@ html, body {
     display: flex;
     height: calc(100vh - 100px);
     width: 100%;
+    gap: 10px;
 }
 
 .button {
